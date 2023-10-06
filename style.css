@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #BEFFF7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery {
+    background-color: #6499E9;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.card {
+    background-color: #9EDDFF;
+    width: 30%;
+    margin: 20px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
