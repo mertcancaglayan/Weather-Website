@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Playfair Display', serif;
     box-sizing: border-box;
 }
 
@@ -16,17 +16,111 @@ body {
     background-color: #6499E9;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     width: 90%;
+    margin: 30px 0;
+    border-radius: 40px;
 }
 
 .card {
-    background-color: #9EDDFF;
+    background: linear-gradient(145deg, #559fdb, #6fcdd8);
     width: 30%;
-    margin: 20px;
+    margin: 30px 10px 10px 0;
+    padding: 25px;
+    text-align: center;
+    border-radius: 20px;
 }
 
 .search {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    width: 100%;
 }
+
+.search input {
+    padding: 5px 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+    width: 50%;
+}
+
+.search>i {
+    color: aliceblue;
+}
+
+
+.search button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: aliceblue;
+}
+.search button:hover {
+    color: black;
+}
+
+.location {
+    margin-top: 20px;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: aliceblue;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 3px;
+    width: 100%;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 75%;
+}
+
+.current-weather {
+    display: inline;
+    align-items: center;
+    text-align: center;
+}
+
+#current-degree {
+    font-size: 3rem;
+    font-weight: 800;
+    color: aliceblue;
+}
+
+#current-status {
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    color: aliceblue;
+    margin: 5px;
+}
+
+
+.weather-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 45px;
+    color: aliceblue;
+    font-weight: 500;
+}
+
+.weather-details .col {
+    width: 50%;
+}
+
+.weather-details img {
+    width: 50%;
+}
+
+
