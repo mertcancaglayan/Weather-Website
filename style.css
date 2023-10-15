@@ -44,9 +44,12 @@ body {
     border: none;
     border-radius: 10px;
     background-color: #ffffff;
-    font-size: 15px;
     text-align: center;
     width: 50%;
+}
+
+input::placeholder {
+    font-size: 0.75rem;
 }
 
 .search>i {
