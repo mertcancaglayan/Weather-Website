@@ -7,7 +7,7 @@ let searchFormElement = document.querySelector(".search");
 const apiKey = "98d1da12c9a9a314ccfffb4f465d98d3";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
-async function checkWeather(city) {
+async function checkWeather(city = "istanbul") {
     const response = await fetch(apiUrl+ city +`&appid=${apiKey}`);
     let data = await response.json();
     searchFormElement.reset()
@@ -35,6 +35,8 @@ async function checkWeather(city) {
     }
 }
 
+
+checkWeather()
 
 searchButtonElement.addEventListener("click", (event) => {
     event.preventDefault()
