@@ -2,7 +2,7 @@
 ### Shows Weather Status On Live
 
 ### Live WebSite
-https://mertcancaglayan.github.io/webquiz.github.io/
+https://mertcancaglayan.github.io/Weather-Website/
 
 
 ### Preview
