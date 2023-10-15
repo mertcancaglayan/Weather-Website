@@ -26,7 +26,7 @@ body {
 .card {
     background: linear-gradient(145deg, #559fdb, #6fcdd8);
     width: 30%;
-    margin: 30px 10px 10px 0;
+    margin: 30px 10px 30px 0;
     padding: 25px;
     text-align: center;
     border-radius: 20px;
@@ -90,13 +90,13 @@ body {
     text-align: center;
 }
 
-#current-degree {
+.current-degree {
     font-size: 3rem;
     font-weight: 800;
     color: aliceblue;
 }
 
-#current-status {
+.current-status {
     font-size: 1.3rem;
     font-weight: 700;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
@@ -121,6 +121,36 @@ body {
 
 .weather-details img {
     width: 50%;
+}
+
+@media (max-width: 1024px) {
+    .gallery {
+        flex-direction: column;
+    }
+    .card {
+        width: 50%;
+        margin: 15px 0;
+    }
+
+    .current-degree {
+        font-size: 2rem; 
+    }
+    .current-status {
+        font-size: 1rem; 
+    }
+    .location {
+        font-size: 1.3rem; 
+    }
+}
+
+@media (max-width: 580px) {
+    .weather-details {
+        font-size: 0.5rem;
+    }
+    .location {
+        font-size: 1rem; 
+    }
+
 }
 
 
