@@ -17,7 +17,6 @@ body {
 .gallery {
     background-color: #6499E9;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     width: 90%;
@@ -132,9 +131,6 @@ input::placeholder {
 
 
 @media (max-width: 1024px) {
-    .gallery {
-        flex-direction: column;
-    }
     .card {
         width: 60%;
         margin: 15px 0;
@@ -173,4 +169,9 @@ input::placeholder {
     }
 }
 
+@media (max-width:500px){
+    .weather-details {
+        font-size: 0.55rem; 
+    }
+}
 
