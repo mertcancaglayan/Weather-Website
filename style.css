@@ -173,25 +173,4 @@ input::placeholder {
     }
 }
 
-@media (max-width:5px){
-    .card {
-        width: 70%;
-        margin: 15px 0;
-    }
-    .search input {
-        width: 80%;
-    }
-    .location {
-        font-size: 1.2rem;
-    }
-    .current-degree {
-        font-size: 1.5rem;
-    }
-    .current-status {
-        font-size: 0.9rem;
-    }
-    .weather-details {
-        font-size: 0.8rem; 
-    }
-}
 
