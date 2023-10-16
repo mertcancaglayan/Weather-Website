@@ -10,6 +10,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
+    min-height: 100vh;
 }
 
 .gallery {
@@ -25,7 +27,7 @@ body {
 
 .card {
     background: linear-gradient(145deg, #559fdb, #6fcdd8);
-    width: 30%;
+    width: 27%;
     margin: 30px 10px 30px 0;
     padding: 25px;
     text-align: center;
@@ -40,7 +42,8 @@ body {
 }
 
 .search input {
-    padding: 5px 5px;
+    padding: 5px 0;
+    margin: 0 5px;
     border: none;
     border-radius: 10px;
     background-color: #ffffff;
@@ -116,6 +119,7 @@ input::placeholder {
     margin-top: 45px;
     color: aliceblue;
     font-weight: 500;
+    font-size: 0.9rem;
 }
 
 .weather-details .col {
@@ -126,34 +130,68 @@ input::placeholder {
     width: 50%;
 }
 
+
 @media (max-width: 1024px) {
     .gallery {
         flex-direction: column;
     }
     .card {
-        width: 50%;
+        width: 60%;
         margin: 15px 0;
     }
 
     .current-degree {
-        font-size: 2rem; 
+        font-size: 2rem;
     }
     .current-status {
-        font-size: 1rem; 
+        font-size: 1rem;
     }
     .location {
-        font-size: 1.3rem; 
+        font-size: 1.5rem;
     }
 }
 
-@media (max-width: 580px) {
+@media (max-width:768px){
+    .card {
+        width: 70%;
+        margin: 15px 0;
+    }
+    .search input {
+        width: 80%;
+    }
+    .location {
+        font-size: 1.2rem;
+    }
+    .current-degree {
+        font-size: 1.5rem;
+    }
+    .current-status {
+        font-size: 0.9rem;
+    }
     .weather-details {
-        font-size: 0.5rem;
+        font-size: 0.8rem; 
     }
-    .location {
-        font-size: 1rem; 
-    }
-
 }
 
+@media (max-width:5px){
+    .card {
+        width: 70%;
+        margin: 15px 0;
+    }
+    .search input {
+        width: 80%;
+    }
+    .location {
+        font-size: 1.2rem;
+    }
+    .current-degree {
+        font-size: 1.5rem;
+    }
+    .current-status {
+        font-size: 0.9rem;
+    }
+    .weather-details {
+        font-size: 0.8rem; 
+    }
+}
 
